@@ -6,32 +6,24 @@
       <div class="about--title">Software Engineer</div>
     </div>
     <div class="hero--center">
-      <div class="arc--outer">
-        <span>something</span>
-        <span>something</span>
-        <span>something</span>
-        <span>something</span>
-        <span>something</span>
-      </div>
-      <div class="arc--inner">
-        <span>blah</span>
-        <span>blah</span>
-        <span>blah</span>
+
+      <div class="about--arc-text">
+        {{arc-text text="| dedicated | energetic | thoughtful "
+                   radius=95
+        }}
       </div>
       <div class="about--avatar">
         <img src="{{rootURL}}images/avatar.png">
       </div>
     </div>
     <div class="hero--right">
-      <div class="contact-info__address">
-        <div class="contact-info__address-one">1234 Shutta</div>
-        <div class="contact-info__address-two">Blah, More Blah 87654</div>
+      <div class="contact-info__location">
+        <div>{{mdi-icon props="map-marker,18"}}West Haven, Utah</div>
       </div>
 
       <div class="contact-info__renrakusaki">
-        <div>9876543</div>
-        <div>bob@example.com</div>
-        <div>@twitter.com</div>
+        <div>{{mdi-icon props="email,18"}}<a href="mailto:tomoguisuru@gmail.com">tomoguisuru@gmail.com</a></div>
+        <div>{{mdi-icon props="twitter,18"}}<a href="https://twitter.com/tomoguisuru">@tomoguisuru</a></div>
       </div>
     </div>
   </div>

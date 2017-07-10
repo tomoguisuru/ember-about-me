@@ -12,7 +12,11 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "serve": "ember s --live-reload=false",
+    "clean": "yarn cache clean && bower cache clean",
+    "reset": "rm -rf node_modules bower_components dist tmp yarn.lock",
+    "init": "yarn && bower install"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
