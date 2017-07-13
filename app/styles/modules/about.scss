@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 1024px;
-  background-color: whitesmoke;
+  background-color: $white;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,12 @@
     display: flex;
 
     .hero {
+      &--left, &--right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
       &--left {
         text-align: right;
         line-height: 0.75;
@@ -22,11 +28,11 @@
 
           &--last-name {
             font-size: 4.5em;
-            color: darkred;
+            color: $color--primary;
           }
 
           &--title {
-            color: darkgray;
+            color: $color--primary-dark;
           }
         }
       }
@@ -36,19 +42,27 @@
         flex-direction: column;
         align-items: center;
 
-        .about {
+        .avatar {
+          width: 200px;
+          height: 200px;
+          position: relative;
+          background-color: $color--muted;
+          border-radius: 100%;
+          border: 1px solid $color--primary-very-light;
+          color: $color--primary-very-light;
 
           &--arc-text {
-            .arc-text {
-              top: -35px;
-            }
+            top: -10px;
+            left: 100px;
           }
 
-          &--avatar {
+          &--image {
             width: 150px;
             height: 150px;
             border-radius: 100%;
             overflow: hidden;
+            border: 1px solid $color--primary-very-light;
+            margin: 25px;
 
             img {
               width: 100%;
@@ -64,10 +78,14 @@
           font-size: 18px;
 
           &__location {
-            padding: 15px 0
+            padding: 0 0 25px;
           }
 
           &__renrakusaki {
+            > div {
+              padding: 5px 0;
+            }
+
             .mdi {
               padding-right: 5px;
             }

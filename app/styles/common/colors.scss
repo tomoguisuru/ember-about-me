@@ -1,0 +1,22 @@
+$white: #fff;
+
+$color--primary: #4388b0;
+$color--secondary: #5743b0;
+$color--alt: #43b06b;
+
+$color--muted: #696969;
+
+$color--primary-very-dark: darken($color--primary, 35%);
+$color--primary-dark: darken($color--primary, 20%);
+$color--primary-light: lighten($color--primary, 35%);
+$color--primary-very-light: lighten($color--primary, 50%);
+
+$color--secondary-very-dark: darken($color--secondary, 35%);
+$color--secondary-dark: darken($color--secondary, 20%);
+$color--secondary-light: lighten($color--secondary, 35%);
+$color--secondary-very-light: lighten($color--secondary, 50%);
+
+$color--alt-very-dark: darken($color--alt, 35%);
+$color--alt-dark: darken($color--alt, 20%);
+$color--alt-light: lighten($color--alt, 35%);
+$color--alt-very-light: lighten($color--alt, 50%);
