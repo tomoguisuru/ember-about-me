@@ -46,14 +46,14 @@
           width: 200px;
           height: 200px;
           position: relative;
-          background-color: $color--muted;
+          background-color: $color--default;
           border-radius: 100%;
           border: 1px solid $color--primary-very-light;
-          color: $color--primary-very-light;
+          color: $white;
 
           &--arc-text {
-            top: -10px;
-            left: 100px;
+            top: -8px;
+            left: 101px;
           }
 
           &--image {
@@ -94,10 +94,86 @@
       }
     }
 
-
     > div {
       flex: 1;
       padding: 20px;
+    }
+  }
+
+  .content {
+
+    .about-me {
+      padding: 10px 60px 30px;
+    }
+
+    ul.history-list {
+      list-style: none;
+
+      li {
+        &:first-child {
+          font-size: 18px;
+        }
+
+        &:last-child {
+          font-size: 10px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-end;
+
+    .hero {
+      &--center {
+        display: none !important;
+      }
+
+      &--right {
+        padding: 5px !important;
+
+        .contact-info__location {
+          display: none;
+        }
+
+        .contact-info__renrakusaki {
+          display: flex;
+          flex-wrap: wrap;
+
+          & > div {
+            flex-basis: 50%;
+          }
+        }
+      }
+    }
+
+  }
+
+  .content {
+    .about-me {
+      padding: 10px 30px !important;
+    }
+
+    .card {
+      flex-direction: column;
+
+      &--content {
+        border: none !important;
+      }
     }
   }
 }

@@ -3,22 +3,28 @@
 @import "modules/about";
 
 @import "components/arc-text";
+@import "components/card";
 
 
 html {
   background-color: $color--primary-very-light;
-  color: $color--muted;
+  color: $color--default;
+  font-family: monospace;
+}
+
+h3 {
+  margin: 5px 0;
 }
 
 a {
   text-decoration: none;
 
   &:link, &:visited, &:active {
-    color: $color--muted;
+    color: $color--primary;
   }
 
   &:hover {
-    font-weight: 600;
     color: $color--primary-dark;
+    font-weight: 600;
   }
 }

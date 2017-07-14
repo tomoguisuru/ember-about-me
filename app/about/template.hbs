@@ -11,8 +11,9 @@
 
       <div class="avatar">
         {{arc-text classNames="avatar--arc-text"
-                   text="| Collaborated | Motivated | Designed | Tested "
+                   text="| Tested | Designed | Collaborated | Motivated | Coded "
                    radius=95
+                   origin=-2
         }}
 
         <div class="avatar--image">
@@ -27,6 +28,7 @@
 
       <div class="contact-info__renrakusaki">
         <div>{{mdi-icon props="email,18"}}<a href="mailto:tomoguisuru@gmail.com">tomoguisuru@gmail.com</a></div>
+        <div>{{mdi-icon props="github-circle,18"}}<a href="https://github.com/tomoguisuru?tab=repositories">tomoguisuru</a></div>
         <div>{{mdi-icon props="twitter,18"}}<a href="https://twitter.com/tomoguisuru" target="_blank" rel="noreferrer noopener">@tomoguisuru</a></div>
         <div>{{mdi-icon props="linkedin-box,18"}}<a href="https://www.linkedin.com/in/brandon-drake-6b362050/" target="_blank" rel="noreferrer noopener">Brandon Drake</a></div>
       </div>
@@ -35,9 +37,61 @@
 
   <div class="content">
 
+    <div class="about-me">
+      <!-- start slipsum code -->
+
+      <h1>Oh... what I'm gon' do?</h1>
+      <p>
+        Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses
+        differently than mine. You don't get sick, I do. That's also clear. But for some reason,
+        you and I react the exact same way to water. We swallow it too fast, we choke. We get some
+        in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're
+        on the same curve, just on opposite ends.
+      </p>
+
+      <!-- end slipsum code -->
+    </div>
+
     <div class="card">
-      <div class="card--left"></div>
-      <div class="card-right"></div>
+      <article class="card--content">
+        <header>
+          <h3>{{mdi-icon props="school,24"}} Education</h3>
+        </header>
+        <section>
+          <ul class="history-list">
+            <li>Weber State University</li>
+            <li>Bachelor of Science, Computer Software Engineering</li>
+            <li>2006 - 2010</li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="card--content card--content-right">
+        <header>
+          <h3>{{mdi-icon props="desktop-mac,24"}} Work Experience</h3>
+        </header>
+        <section>
+          <ul class="history-list">
+            <li>Teem Technologies Inc.</li>
+            <li>Frontend Lead Developer</li>
+            <li>2017 - Current</li>
+          </ul>
+        </section>
+        <section>
+          <ul class="history-list">
+            <li>Teem Technologies Inc.</li>
+            <li>Sr Frontend Developer</li>
+            <li>2015 - 2017</li>
+          </ul>
+        </section>
+        <section>
+          <ul class="history-list">
+            <li>SpruceMail</li>
+            <li>Software Developer</li>
+            <li>2014 - 2015</li>
+          </ul>
+        </section>
+      </article>
     </div>
 
   </div>
