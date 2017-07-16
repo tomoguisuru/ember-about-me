@@ -103,6 +103,7 @@
   .content {
 
     .about-me {
+      column-count: 3;
       padding: 10px 60px 30px;
     }
 
@@ -120,6 +121,16 @@
         }
       }
     }
+
+    ul.generic-list {
+      list-style: none;
+    }
+
+    .skills {
+      > div {
+        display: inline-block;
+      }
+    }
   }
 }
 
@@ -130,6 +141,10 @@
     padding: 0;
     border-radius: 0;
     box-shadow: none;
+
+    .about-me {
+      column-count: 2 !important;
+    }
   }
 }
 
@@ -166,6 +181,7 @@
   .content {
     .about-me {
       padding: 10px 30px !important;
+      column-count: 1 !important;
     }
 
     .card {

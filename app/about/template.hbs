@@ -22,10 +22,6 @@
       </div>
     </div>
     <div class="hero--right">
-      <div class="contact-info__location">
-        <div>{{mdi-icon props="map-marker,18"}}<a href="https://www.google.com/maps/place/West+Haven,+UT/data=!4m2!3m1!1s0x87530ed77073d993:0x979ce0cd87d5794?sa=X&ved=0ahUKEwj72IPDpIXVAhWLx4MKHawZA1AQ8gEIJzAA" target="_blank" rel="noreferrer noopener">West Haven, Utah</a></div>
-      </div>
-
       <div class="contact-info__renrakusaki">
         <div>{{mdi-icon props="email,18"}}<a href="mailto:tomoguisuru@gmail.com">tomoguisuru@gmail.com</a></div>
         <div>{{mdi-icon props="github-circle,18"}}<a href="https://github.com/tomoguisuru?tab=repositories">tomoguisuru</a></div>
@@ -36,22 +32,6 @@
   </div>
 
   <div class="content">
-
-    <div class="about-me">
-      <!-- start slipsum code -->
-
-      <h1>Oh... what I'm gon' do?</h1>
-      <p>
-        Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses
-        differently than mine. You don't get sick, I do. That's also clear. But for some reason,
-        you and I react the exact same way to water. We swallow it too fast, we choke. We get some
-        in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're
-        on the same curve, just on opposite ends.
-      </p>
-
-      <!-- end slipsum code -->
-    </div>
-
     <div class="card">
       <article class="card--content">
         <header>
@@ -92,6 +72,100 @@
           </ul>
         </section>
       </article>
+    </div>
+
+    <div class="card">
+      <article class="card--content card--content-left">
+        <header>
+          <h3>{{mdi-icon props="professional-hexagon,24"}} Professional Skills</h3>
+        </header>
+
+        <section>
+          <div class="skills">
+            {{#each sortedSkills as |skill|}}
+              {{#job-skill skillLevel=skill.level}}{{skill.name}}{{/job-skill}}
+            {{/each}}
+          </div>
+        </section>
+      </article>
+
+      <article class="card--content card--content-right">
+        <header>
+          <h3>{{mdi-icon props="gamepad,24"}} Personal Hobbies</h3>
+        </header>
+
+        <section>
+
+          <ul class="generic-list font--24">
+            {{#each hobbies as |hobby|}}
+              <li>{{mdi-icon props=hobby.icon}} {{hobby.description}}</li>
+            {{/each}}
+          </ul>
+        </section>
+      </article>
+    </div>
+
+    <div class="about-me">
+      <h1>About Me</h1>
+      <p>
+        Programming was first introduced to me at a young age when a neighbor friend showed me that I could make simple
+        "Choose your own adventure" games using BASIC. The desire to build my own games fueled my desire to learn more
+        about programming.
+      </p>
+
+      <p>
+        During high school I took every programming class I possible could and knew that I wanted to build meaningful programs
+        professionally. I was exposed to many different languages at high school including PASCAL, C, and C++. While many
+        of the projects I worked on were interesting, nothing was more memorable than my senior project where I was able
+        to build a game using C++.
+      </p>
+
+      <p>
+        After high school I worked in nutraceutical manufacturing making vitamin tablets and capsules while attending classes
+        at Weber State University (WSU). I made several simple programs that I used to help track inventory coming in and
+        out of our facility but the smell of the place eventually got to me (and my car).
+      </p>
+
+      <p>
+        I transitioned into IT support for Staker & Parson Companies and eventually into data analysis. IT was fun but
+        programming was still where my passion was.
+      </p>
+
+      <p>
+        During my senior year at WSU I was hired on at Petersen Inc. as a full time .NET developer. I created an intranet
+        framework using .NET 4.5 and a Quality Assurance app for tracking deviations in production. I also worked on programming
+        and integrating a custom CMS system using PHP.
+      </p>
+
+      <p>
+        After a few years at Petersen Inc. I found my self working for Tech Media where I worked in ASP.NET MVC making web pages
+        and enhancing the existing CSM system. While at Tech Media, I wrote a small jQuery plugin that is still (mostly)
+        used to this date.
+      </p>
+
+      <p>
+        I was presented with an opportunity to work remotely on ASP.NET and BackboneJS pages for a startup called Spruce Media. We worked on
+        an ad delivery platform for getting ads in front of people on Facebook. The market made a pivot and so did we and became
+        SpruceMail LLC. Seeing that we were doing something new anyway, we started to use Ruby on Rails and EmberJS. I worked
+        as the support lead fixing bugs and creating small features between "fires". Our product was great but the market wasn't
+        and so it was time to find something new.
+      </p>
+
+      <p>
+        After some initial panic in not having a job, I found my new groove at Teem.com (formerly EventBoard.io). Not wasting any time,
+        I moved Teem's EmberJS apps into the PODS and started working on automated testing. I was able to bring our full "automated"
+        test time from 2 hours down to less than 10 minutes. I continued working hard enforcing best practices for git, enabling
+        CI/CD for our EmberJS apps, and updating all of our dated EmberJS. I've delivered several projects including a FlightBoard,
+        a room Booking App, a completely re-branded and streamlined Management App, and a new Self Purchasing App. At the start
+        of 2017 I also official became the lead frontend developer and was given responsibility for the over the other frontend
+        developers.
+      </p>
+
+      <p>
+        Regardless of the job or the project, I make sure to dedicate myself 100% to the task. I'm cautious and think thoroughly
+        through every project. There isn't a project that I have worked on that I cannot say with absolute confidence that
+        I gave more that I received.
+      </p>
     </div>
 
   </div>

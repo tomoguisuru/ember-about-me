@@ -1,4 +1,5 @@
 @import "common/colors";
+@import "utils/fonts";
 
 @import "modules/about";
 
@@ -27,4 +28,9 @@ a {
     color: $color--primary-dark;
     font-weight: 600;
   }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
 }
