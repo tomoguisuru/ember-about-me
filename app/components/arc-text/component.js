@@ -17,7 +17,7 @@ const ArcTextComponent = Component.extend({
   radius: 100,
   text:   '',
 
-  didReceiveAttrs() {
+  init() {
     this._super(...arguments);
 
     scheduleOnce('afterRender', this, function() {

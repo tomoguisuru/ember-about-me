@@ -1,14 +1,14 @@
 {
   "name": "ember-about-me",
-  "version": "0.0.0",
-  "description": "Small description for ember-about-me goes here",
+  "version": "0.1.0",
+  "description": "Simple CV using EmberJS",
   "license": "MIT",
-  "author": "",
+  "author": "Brandon Drake",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "git@github.com:tomoguisuru/ember-about-me.git",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
