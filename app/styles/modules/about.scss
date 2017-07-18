@@ -1,0 +1,195 @@
+.wrapper {
+  max-width: 1024px;
+  background-color: $white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1px;
+  box-shadow: black -1px 1px 6px 1px;
+
+  .hero {
+    display: flex;
+
+    .hero {
+      &--left, &--right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &--left {
+        text-align: right;
+        line-height: 0.75;
+
+        .about {
+          &--first-name {
+            font-size: 1.5em;
+          }
+
+          &--last-name {
+            font-size: 4.5em;
+            color: $color--primary;
+          }
+
+          &--title {
+            color: $color--primary-dark;
+          }
+        }
+      }
+
+      &--center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .avatar {
+          width: 200px;
+          height: 200px;
+          position: relative;
+          background-color: $color--default;
+          border-radius: 100%;
+          border: 1px solid $color--primary-very-light;
+          color: $white;
+
+          &--arc-text {
+            top: -8px;
+            left: 101px;
+          }
+
+          &--image {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            overflow: hidden;
+            border: 1px solid $color--primary-very-light;
+            margin: 25px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &--right {
+        text-align: left;
+
+        .contact-info {
+          font-size: 18px;
+
+          &__location {
+            padding: 0 0 25px;
+          }
+
+          &__renrakusaki {
+            > div {
+              padding: 5px 0;
+            }
+
+            .mdi {
+              padding-right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    > div {
+      flex: 1;
+      padding: 20px;
+    }
+  }
+
+  .content {
+
+    .about-me {
+      column-count: 3;
+      padding: 10px 60px 30px;
+    }
+
+    ul.history-list {
+      list-style: none;
+
+      li {
+        &:first-child {
+          font-size: 18px;
+        }
+
+        &:last-child {
+          font-size: 10px;
+          font-style: italic;
+        }
+      }
+    }
+
+    ul.generic-list {
+      list-style: none;
+    }
+
+    .skills {
+      > div {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    .about-me {
+      column-count: 2 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-end;
+
+    .hero {
+      &--center {
+        display: none !important;
+      }
+
+      &--right {
+        padding: 5px !important;
+
+        .contact-info__location {
+          display: none;
+        }
+
+        .contact-info__renrakusaki {
+          display: flex;
+          flex-wrap: wrap;
+
+          & > div {
+            flex-basis: 50%;
+          }
+        }
+      }
+    }
+
+  }
+
+  .content {
+    .about-me {
+      padding: 10px 30px !important;
+      column-count: 1 !important;
+    }
+
+    .card {
+      flex-direction: column;
+
+      &--content {
+        border: none !important;
+      }
+    }
+  }
+}

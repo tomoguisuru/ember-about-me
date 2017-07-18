@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  padding: 20px 10px;
+  min-height: 200px;
+
+  .card--content {
+    flex: 1;
+    padding: 10px;
+
+    &-right {
+      border-left: 1px solid $color--default;
+    }
+
+    header {
+      border-bottom: 1px solid $color--default;
+    }
+  }
+}
