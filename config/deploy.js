@@ -5,15 +5,15 @@ module.exports = function(deployTarget) {
   var ENV = {
     build: {},
     s3: {
-      accessKeyId:      process.env.AWS_KEY,
-      secretAccessKey:  process.env.AWS_SECRET,
+      accessKeyId:      process.env.S3_KEY,
+      secretAccessKey:  process.env.S3_SECRET,
       bucket:           process.env.S3_BUCKET,
       region:           'us-west-2',
       cacheControl:     'max-age=315360000, no-transform, public',
     },
     's3-index': {
-      accessKeyId:      process.env.AWS_KEY,
-      secretAccessKey:  process.env.AWS_SECRET,
+      accessKeyId:      process.env.S3_KEY,
+      secretAccessKey:  process.env.S3_SECRET,
       bucket:           process.env.S3_BUCKET,
       region:           'us-west-2',
       allowOverwrite:   true,
