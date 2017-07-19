@@ -1,6 +1,6 @@
 {
   "name": "ember-about-me",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple CV using EmberJS",
   "license": "MIT",
   "author": "Brandon Drake",
@@ -13,6 +13,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
+    "deploy": "ember deploy production --verbose",
     "serve": "ember s --live-reload=false",
     "clean": "yarn cache clean && bower cache clean",
     "reset": "rm -rf node_modules bower_components dist tmp yarn.lock",
