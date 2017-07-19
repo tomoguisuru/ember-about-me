@@ -16,7 +16,7 @@ dependencies:
 
   override:
     - yarn
-    
+
 deployment:
   qa:
     branch: /(release|hotfix)\/.*/
