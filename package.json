@@ -1,9 +1,9 @@
 {
   "name": "ember-about-me",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple CV using EmberJS",
   "license": "MIT",
-  "author": "Brandon Drake",
+  "author": "Brandon Drake <tomoguisuru@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,13 +11,12 @@
   "repository": "git@github.com:tomoguisuru/ember-about-me.git",
   "scripts": {
     "build": "ember build",
-    "start": "ember server",
     "test": "ember test",
     "deploy": "ember deploy production --verbose",
-    "serve": "ember s --live-reload=false",
-    "clean": "yarn cache clean && bower cache clean",
-    "reset": "rm -rf node_modules bower_components dist tmp yarn.lock",
-    "init": "yarn && bower install"
+    "start": "ember s --live-reload=false",
+    "clean": "yarn cache clean",
+    "reset": "rm -rf node_modules dist tmp yarn.lock",
+    "prep": "yarn"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

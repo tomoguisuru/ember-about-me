@@ -9,7 +9,7 @@ dependencies:
     - sudo sed -i 's|HERE/chrome\"|HERE/chrome\" --disable-setuid-sandbox|g' /opt/google/chrome/google-chrome
     - rm google-chrome.deb
     - npm install -g bower
-    - npm install -g ember-cli@2.12.1
+    - npm install -g ember-cli@2.14.0
 
   post:
     - npm rebuild node-sass
