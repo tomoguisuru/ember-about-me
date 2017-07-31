@@ -16,7 +16,7 @@
     "start": "ember s --live-reload=false",
     "clean": "yarn cache clean",
     "reset": "rm -rf node_modules dist tmp yarn.lock",
-    "prepare": "yarn"
+    "prep": "yarn"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
