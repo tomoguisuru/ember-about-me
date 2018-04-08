@@ -1,11 +1,6 @@
-import Ember from 'ember';
-
-const {
-  Component,
-  computed,
-  isBlank,
-  get,
-} = Ember;
+import Component from '@ember/component';
+import { computed, get } from '@ember/object';
+import { isBlank } from '@ember/utils';
 
 const MDIComponent = Component.extend({
   tagName: 'i',

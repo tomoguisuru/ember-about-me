@@ -52,9 +52,16 @@
         </header>
         <section>
           <ul class="history-list">
+            <li>Popular Pays</li>
+            <li>Sr. Frontend Developer</li>
+            <li>Jan 2018 - Current</li>
+          </ul>
+        </section>
+        <section>
+          <ul class="history-list">
             <li>Teem Technologies Inc.</li>
             <li>Frontend Lead Developer</li>
-            <li>2017 - Current</li>
+            <li>2017 - Dec 2017</li>
           </ul>
         </section>
         <section>
@@ -83,7 +90,10 @@
         <section>
           <div class="skills">
             {{#each sortedSkills as |skill|}}
-              {{#job-skill skillLevel=skill.level}}{{skill.name}}{{/job-skill}}
+              {{job-skill
+                skillLevel=skill.level
+                name=skill.name
+              }}
             {{/each}}
           </div>
         </section>
@@ -152,10 +162,15 @@
       </p>
 
       <p>
-        I'm currently wprking for Teem.com (formerly EventBoard.io) as their lead frontend developer. I've moved Teem's
-        EmberJS apps into the PODS reduced test time from 2 hours down to less than 10 minutes, introduced CI/CD, and continually
-        updating our Ember apps. I've delivered several projects including a FlightBoard, a room Booking App, a completely
-        re-branded and streamlined Management App, and a Self Purchasing App.
+        Working for Teem.com (formerly EventBoard.io) as their lead frontend developer I moved Teem's
+        EmberJS apps into the PODS structure, reduced test time from 2 hours down to less than 10 minutes, introduced CI/CD,
+        and continually worked on keeping our Ember apps up-to-date. I also worked with other team members to delivered several
+        projects including a FlightBoard, a room Booking App, a completely re-branded and streamlined Management App, and a
+        Self Purchasing portal to Teems client offerings.
+      </p>
+
+      <p>
+        I currently work remotely for Popular Pays as a frontend developer using EmberJS and Ruby on Rails.
       </p>
     </div>
 

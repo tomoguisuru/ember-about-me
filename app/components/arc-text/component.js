@@ -1,10 +1,5 @@
-import Ember from 'ember';
-
-const {
-  Component,
-  run: { scheduleOnce },
-  // get,
-} = Ember;
+import Component from '@ember/component';
+import { scheduleOnce } from '@ember/runloop';
 
 /**
  * ref used https://codepen.io/ccallen001/pen/QKpQgB
@@ -17,7 +12,7 @@ const ArcTextComponent = Component.extend({
   radius: 100,
   text:   '',
 
-  init() {
+  didInsertElement() {
     this._super(...arguments);
 
     scheduleOnce('afterRender', this, function() {

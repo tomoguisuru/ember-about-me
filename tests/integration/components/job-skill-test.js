@@ -6,18 +6,23 @@ moduleForComponent('job-skill', 'Integration | Component | job skill', {
 });
 
 test('it renders', function(assert) {
+  this.render(hbs`
+    {{job-skill 
+      skillLevel=skillLevel 
+      name="Monkey"
+    }}
+  `);
 
-  this.render(hbs`{{job-skill skillLevel=skillLevel}}`);
-
-  assert.equal(this.$().text().trim(), 'Must supply block', 'Component must be in block format');
+  assert.equal(this.$().text().trim(), 'Monkey', 'Emits name property');
   assert.equal(this.$('.job-skill').hasClass('font--12'), true, 'Has correct font');
-
 
   this.set('skillLevel', 5);
 
   // Template block usage:
   this.render(hbs`
-    {{#job-skill skillLevel=skillLevel}}
+    {{#job-skill 
+      skillLevel=skillLevel
+    }}
       template block text
     {{/job-skill}}
   `);

@@ -1,19 +1,14 @@
-import Ember from 'ember';
-
-const {
-  Controller,
-  computed,
-  get,
-} = Ember;
+import Controller from '@ember/controller';
+import { computed, get, getProperties } from '@ember/object';
 
 const AboutController = Controller.extend({
   sortKey:       'name',  // [name, level, years]
   sortDirection: 'asc',   // [asc, desc]
 
   skills: [
+    { name: 'EmberJS',    level: 5, years: 5 },
     { name: 'HTML',       level: 4, years: 10 },
-    { name: 'EmberJS',    level: 5, years: 3 },
-    { name: 'ReactJS',    level: 3, years: 1 },
+    { name: 'ReactJS',    level: 2, years: 1 },
     { name: 'JavaScript', level: 5, years: 8 },
     { name: 'SQL',        level: 3, years: 7 },
     { name: 'ASP.NET',    level: 2, years: 5 },
@@ -36,7 +31,7 @@ const AboutController = Controller.extend({
   ],
 
   sortedSkills: computed('skills', 'sortKey', 'sortDirection', function() {
-    const { sortKey, sortDirection } = this.getProperties('sortKey', 'sortDirection');
+    const { sortKey, sortDirection } = getProperties(this, 'sortKey', 'sortDirection');
     return get(this, 'skills').sortBy(sortKey, sortDirection);
   }),
 });
