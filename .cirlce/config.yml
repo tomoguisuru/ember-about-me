@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  - build:
+    docker:
+      - image: circleci/node:7.10-browsers
+        environment:
+          CHROME_BIN: "/usr/bin/google-chrome"
+    steps:
+      - checkout
+      - run:
+          name: Yarn Install
+          command: yarn install --non-interactive
+      - run:
+          name: Run Tests
+          command: yarn test
+      - deploy:
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ember deploy production
+            fi
