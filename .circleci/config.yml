@@ -16,5 +16,5 @@ jobs:
       - deploy:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              ember deploy production
+              yarn deploy
             fi
